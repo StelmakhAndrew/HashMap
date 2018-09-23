@@ -1,5 +1,3 @@
-package HashMap;
-
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.Objects;
@@ -39,7 +37,7 @@ public class HashMap {
                 throw new NoSuchElementException("Key not found");
             }
 
-            if ((hashMap[basket]).getKey().equals(key)) {
+            if ((hashMap[basket]).getKey() == (key)) {
                 return hashMap[basket];
             }
             basket++;

@@ -1,21 +1,19 @@
-package HashMap;
-
 import java.util.Objects;
 
 public class Pair {
-    private final Integer key;
-    private final Long value;
+    private final int key;
+    private final long value;
 
-    Pair(Integer key, Long value) {
+    Pair(int key, long value) {
         this.key = key;
         this.value = value;
     }
 
-    public Integer getKey() {
+    public int getKey() {
         return key;
     }
 
-    public Long getValue() {
+    public long getValue() {
         return value;
     }
 
@@ -26,7 +24,7 @@ public class Pair {
         if (this.getClass() != obj.getClass())
             return false;
         Pair point = (Pair) obj;
-        return key.equals(point.key);
+        return key == (point.key);
     }
 
     @Override
